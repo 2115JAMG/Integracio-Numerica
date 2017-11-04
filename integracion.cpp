@@ -49,15 +49,15 @@ void Integracion::metodo(){
      if(h==0){
          QMessageBox msgBox;
          msgBox.setText("Usted no ingreso H la cual es fundamental para que el método se realice (si no el método no funciona).");//suggests entering more than 1 value in X0 to start the method
-         msgBox.exec();
+         msgBox.exec();//shows a waring
          }
 
-r1=y1+(2*y2);
+r1=y1+(2*y2);//step by step method is performed to avoid data difference errors
 r2=(2*y3)+(2*y4);
 r3=(2*y5)+(2*y6);
 r4=(2*y7)+(2*y8);
 r5=(2*y9)+y10;
-rt=(h*(r1+r2+r3+r4+r5))/2;
+rt=(h*(r1+r2+r3+r4+r5))/2;//result
 
 
 //show the text in the interface
